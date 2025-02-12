@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "PlusJakartaSans", Arial, Helvetica, sans-serif;
+  src: url(../assets/font/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "PlusJakartaSans", Arial, Helvetica, sans-serif;
+  background-color: #f6f7f9;
+}
+:root {
+  --first-color: #1a202c;
+  ---second-color: #90a3bf;
+  ---third-color: #ffffff;
+  ---foruth-color: #3563e9;
+}
+.mainContainer {
+  max-width: 1440px;
+  width: 100%;
+  margin-right: 0 auto;
+  background-color: #f6f7f9;
+}
+.card {
+  margin: 10dvh auto;
+  width: 304px;
+  height: 388px;
+  position: relative;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: var(---third-color);
+}
+.likeIcon {
+  position: absolute;
+  left: 265px;
+  top: 20px;
+}
+.carNameCont {
+  margin: 24px 0px 64px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.carName {
+  color: var(--first-color);
+  font-weight: bold;
+}
+.typeOfCar {
+  color: var(---second-color);
+}
+.fotoContainer {
+  margin: 0 auto;
+}
+.fotoContainer img {
+  width: 232px;
+}
+.carDescription {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+.carDescription .fuel,
+.typeOfgear,
+.sitesOfcar {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.carDescription p {
+  font-size: 14px;
+  color: var(---second-color);
+}
+.rentInfo {
+  display: flex;
+  align-items: center;
+  padding: 0px 24px;
+  justify-content: space-between;
+}
+.rentInfo p {
+  font-size: 20px;
+
+  font-weight: bold;
+}
+.rentInfo span {
+  color: var(---second-color);
+  font-size: 14px;
+}
+.rentInfo button {
+  width: 116px;
+  height: 44px;
+  background-color: var(---foruth-color);
+  border: none;
+  border-radius: 4px;
+  color: var(---third-color);
+}
